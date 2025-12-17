@@ -36,3 +36,7 @@ def merge_sort(A, p, r):
         merge_sort(A, p, q)            # 递归排序左半边
         merge_sort(A, q + 1, r)        # 递归排序右半边
         merge(A, p, q, r)              # 左右都排好后，合并成 A[p..r] 的有序区间
+
+a = [8, 3, 5, 4, 7, 6, 1, 2]
+merge_sort(a, 0, len(a) - 1)
+print(a)
